@@ -1,0 +1,135 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.app-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    text-align: center;
+}
+
+.screen.hide {
+    display: none;
+}
+
+h1 {
+    color: #5a67d8;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.control-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    font-weight: 600;
+}
+
+select {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #434190;
+    transform: translateY(-2px);
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.hud-prefix {
+    font-weight: 600;
+    color: #555;
+}
+
+#question {
+    margin-bottom: 25px;
+    min-height: 50px;
+}
+
+#answer-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.answer-btn {
+    background-color: #f0f2f5;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.answer-btn:hover:not([disabled]) {
+    background-color: #e2e8f0;
+    border-color: #5a67d8;
+}
+
+.answer-btn.correct {
+    background-color: #48bb78;
+    color: white;
+    border-color: #48bb78;
+}
+
+.answer-btn.incorrect {
+    background-color: #f56565;
+    color: white;
+    border-color: #f56565;
+}
+
+.answer-btn:disabled {
+    cursor: not-allowed;
+}
+
+#next-btn {
+    margin-top: 20px;
+}
