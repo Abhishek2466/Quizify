@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizify App</title>
+    <link rel="stylesheet" href="quizify.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <div id="start-screen" class="screen">
+            <h1>Welcome to Quizify!</h1>
+            <p>Select a category and difficulty to begin.</p>
+            <div class="controls">
+                <div class="control-group">
+                    <label for="category">Category:</label>
+                    <select id="category">
+                        <option value="9">General Knowledge</option>
+                        <option value="18">Computers</option>
+                        <option value="21">Sports</option>
+                        <option value="23">History</option>
+                        <option value="27">Animals</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="difficulty">Difficulty:</label>
+                    <select id="difficulty">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+            </div>
+            <button id="start-btn" class="btn">Start Quiz</button>
+        </div>
+
+        <div id="quiz-screen" class="screen hide">
+            <div id="hud">
+                <div id="progress-container">
+                    <p class="hud-prefix">Question <span id="question-counter"></span></p>
+                </div>
+                <div id="score-container">
+                    <p class="hud-prefix">Score: <span id="score">0</span></p>
+                </div>
+            </div>
+            <h2 id="question">What is the question?</h2>
+            <div id="answer-options">
+                </div>
+            <button id="next-btn" class="btn hide">Next</button>
+        </div>
+
+        <div id="end-screen" class="screen hide">
+            <h2>Quiz Complete!</h2>
+            <p>Your final score is <span id="final-score"></span>.</p>
+            <button id="play-again-btn" class="btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="quizify.js"></script>
+</body>
+</html>
